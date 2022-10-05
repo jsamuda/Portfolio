@@ -1,0 +1,103 @@
+.body{
+    display: flex;
+    align-content: space-between;
+}
+
+
+.top{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4a707a;
+    height: 40px;
+}
+
+.top a{
+    font-size: 20px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-weight: bold;
+  color: #DDDDDA !important;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+
+
+.topLinks{
+    display: flex;
+}
+
+.logo p{
+    font-size: 100px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+a{
+    color: black !important;
+    padding: 10px;
+    text-decoration: none !important;
+}
+
+a:hover{
+    text-decoration: underline !important;
+}
+
+.topLeft{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.middle{
+    padding-top: 150px;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(236, 235, 235);
+    height: 50px;
+}
+
+.bottom .btn{
+    color: blue !important;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 16%), 0 1px 2px rgb(0 0 0 / 23%);
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+input{
+    outline: none;
+    border-radius: 100px;
+    width: 600px;
+    height: 50px;
+}
+
+li{
+    list-style: none;
+}
+
+.container .btn{
+    background-color: rgb(236, 234, 234);
+    margin: 10px;
+}
+
+.container .btn:hover{
+    border: 1px solid gray ;
+}
+
+.roundInput{
+    border-radius: 5px;
+}

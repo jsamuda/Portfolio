@@ -1,0 +1,25 @@
+body{
+    background-color:bisque !important;
+    display: flex;
+    justify-content: center;
+}
+
+.carTextbox{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+table, th, td, tr {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th{
+    border: 1px solid black !important;
+  }
+
+  td{
+    border: 1px solid black !important;
+  }

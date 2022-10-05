@@ -1,0 +1,119 @@
+body{
+    background-color: #4a707a !important;
+    height: 100vh;
+    margin: 0;
+    
+}
+
+.contact, .links{
+  display: flex;
+  
+}
+
+.contact ul li, .links ul li{
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+  font-weight: bold;
+}
+
+
+li{
+  list-style: none;
+  color: #DDDDDA;
+}
+
+.mainStuff{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-right: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+}
+
+
+.leftSide{
+  top: 10px;
+  left: 70px;
+  position: relative;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  transform-style: preserve-3d;
+}
+
+.projects{
+  transform-style: preserve-3d;
+}
+.scene {
+  width: 500px;
+  height: 200px;
+  margin: 40px;
+  padding-top: 50px;
+  
+}
+
+.leftSide ul li{
+  transform: perspective(700px) rotateY(45deg) skew(10deg, 0);
+  line-height: 150px;
+  transition: transform .5s;
+}
+
+.leftSide ul li:hover{
+  transform: rotateY(0deg);
+}
+a{
+  text-decoration:underline !important;
+  color: #DDDDDA !important;
+}
+
+.projects li a{
+  text-decoration: none !important;
+  color: #DDDDDA !important;
+  font-size: 150px !important;
+  font-family: Arial;
+  font-weight: bold;
+  transition: color .5s, text-shadow 1s;
+}
+
+.projects li:hover a{
+  color: #4a707a !important;
+  text-shadow: -1px -1px 0 #DDDDDA, 1px -1px 0 #DDDDDA, -1px 1px 0 #DDDDDA, 1px 1px 0 #DDDDDA;
+}
+
+@keyframes offHover {
+  0%{
+    transform: perspective(0px) rotateY(0deg);
+  }
+  
+  25%{
+    transform: perspective(100px) rotateY(0deg);
+  }
+  75%{
+    transform: perspective(400px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(700px) rotateY(45deg);
+  }
+}
+
+@keyframes onHover {
+  0% {
+    transform: perspective(700px) rotateY(45deg);
+  }
+  25%{
+    transform: perspective(400px) rotateY(0deg);
+  }
+  75%{
+    transform: perspective(100px) rotateY(0deg);
+  }
+  100%{
+    transform: perspective(0px) rotateY(0deg);
+  }
+}
+
+
